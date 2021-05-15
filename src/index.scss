@@ -1,0 +1,27 @@
+@import "blocks/vars";
+@import "blocks/mixins";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: system-ui,-apple-system,"Segoe UI",
+  Roboto,"Helvetica Neue",Arial,"Noto Sans",
+  "Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji",
+  "Segoe UI Symbol","Noto Color Emoji";
+
+  background-color: $bg-elements;
+  font-size: 1.4rem;
+  color: $black;
+  line-height: 1.5;
+
+  &.no-scroll,
+  &.show-sidebar {
+    overflow: hidden;
+  }
+}
+
+
+//blocks
+@import "./blocks/btn/btn";
+@import "blocks/todo";
